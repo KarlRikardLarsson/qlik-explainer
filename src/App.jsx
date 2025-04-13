@@ -157,7 +157,15 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sales" element={<SalesPage />} />
-        <Route path="/sales/embedded" element={<EmbedPage url="https://your-qlik-url/sales" />} />
+        <Route
+  path="/sales/embedded"
+  element={
+    <EmbedPage
+      url="https://exsitecab.eu.qlikcloud.com/single/?appid=d8632c34-885c-4270-8419-7d0e76dda5d9&sheet=43fd14b5-8ee5-413c-90e9-e498d4223c6f&theme=horizon&opt=ctxmenu,currsel"
+    />
+  }
+/>
+ />
         <Route
           path="/inventory"
           element={
